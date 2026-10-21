@@ -1,0 +1,9 @@
+host_alias: tengxunyun170.106.188.104
+address: 170.106.188.104
+ssh_user: root
+os: Ubuntu 24.04 LTS
+architecture: x86_64
+ssh_host_key_verified: true
+ssh_host_key_fingerprint: SHA256:oknWGHz7Qt19SH6o9dqDjzxo9syOifHHqtnmxZdgeCA
+notes: >-
+  SSH identity is managed locally. Do not copy private keys into this directory.

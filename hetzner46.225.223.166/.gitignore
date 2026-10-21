@@ -1,0 +1,6 @@
+backups/**
+*.secret
+*.key
+*.pem
+auths/**
+config.yaml

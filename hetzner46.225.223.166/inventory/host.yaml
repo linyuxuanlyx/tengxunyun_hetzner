@@ -1,0 +1,6 @@
+host_alias: hetzner46.225.223.166
+address: 46.225.223.166
+ssh_user: TBD
+ssh_host_key_verified: false
+notes: >-
+  Fill in the SSH user and verified host-key fingerprint before the first remote change.

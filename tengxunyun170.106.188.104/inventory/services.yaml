@@ -1,0 +1,44 @@
+# Historical snapshot; individual observation dates are recorded below.
+services:
+  docker:
+    observed_on: "2026-09-17"
+    version: "29.5.3"
+    compose_version: "v5.1.4"
+  n8n:
+    observed_on: "2026-09-17"
+    container: n8n
+    image: n8nio/n8n:2.26.8
+    internal_port: 5678
+    historical_deployment:
+      observed_on: "2026-06-25"
+      recorded_on: "2026-10-21"
+      source: conversation_readonly_ssh_outputs
+      data_dir: /root/data/docker_data/n8n
+      compose_file: /root/data/docker_data/n8n/docker-compose.yml
+      network: ipsec_net
+      runtime_user: node
+      database_container: n8n-pg
+      database_image: postgres:16
+      runners_container: n8n-runners
+      runners_image: n8nio/runners:2.26.8
+      bind_address: 172.26.39.1
+      port_mappings:
+        - "5443:443"
+        - "5678:5678"
+      domain: n8n.kobayashiii.cloud
+      notes: >-
+        Historical configuration, not reverified on 2026-10-21.
+        Proxy upstream and backend TLS were not inspected in the June session.
+  cli_proxy_api:
+    observed_on: "2026-10-21"
+    container: cli-proxy-api
+    image: eceasy/cli-proxy-api:v8.0.36
+    bind_address: 172.26.39.1
+    port: 8317
+    data_dir: /root/data/cliproxy
+    domain: cli.kobayashiii.cloud
+    https: true
+  nginx_proxy_manager:
+    observed_on: "2026-09-17"
+    container: npmapp202607-codex
+    data_dir: /root/data/npm2026_codex

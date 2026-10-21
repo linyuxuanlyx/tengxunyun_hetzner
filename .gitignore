@@ -1,0 +1,20 @@
+# Local/runtime secrets and machine-specific state
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+*.secret
+*.key
+*.pem
+*.p12
+*.pfx
+*.sqlite
+*.db
+**/auths/**
+**/backups/**
+**/config.yaml
+**/credentials/**
+
+# Local editor state
+github_ai_collect/.obsidian/workspace.json
