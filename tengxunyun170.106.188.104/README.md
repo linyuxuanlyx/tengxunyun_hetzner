@@ -30,3 +30,8 @@ API Key、Management Key、OAuth 文件和私钥只保存在远端受保护位�
 - [2026-06-26 Notion 说明书](changes/2026-06-26-n8n-notion-documentation.md)：文档写入记录与已知待修正内容。
 
 以上记录于 2026-10-21 根据本对话执行结果补录，本次未连接远端。不同日期的快照不得视为当前状态。
+
+## 关联客户端操作
+
+- [MCP 客户端与应用操作历史](changes/2026-10-21-mcp-history-backfill.md)：n8n API/MCP 测试、本地代理和历史测试对象。
+- [Notion MCP 排障补录](changes/2026-10-21-notion-mcp-troubleshooting-backfill.md)：本线程的鉴权失败、OAuth 登录及配置建议纠正。这些为本机和 SaaS 操作，不属于虚拟机变更。
